@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--at com.example.ysu.myapplication.LoginActivity.onCreate( -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E1E1E1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/mainlogo1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E1E1E1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/idText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:hint="I D"
+                android:lines="1"
+                android:inputType=""
+                android:padding="12dp"
+                android:textColor="#5D5D5D"
+                android:textColorHint="#5D5D5D" />
+            <!--android:background="@drawable/focus_border_style"
+            android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
+            android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+            로그인 이미지 사원-->
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Password"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#5D5D5D"
+                android:textColorHint="#5D5D5D" />
+            <!--android:background="@drawable/focus_border_style"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                -->
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/focus_border_style"
+                    android:src="@drawable/login"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:text="로그인"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="5dp"
+                    android:text="자동 로그인"
+                    android:background="#E1E1E1"
+                    android:textColor="#5D5D5D" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:adjustViewBounds="true"
+                android:textColor="#ffffff"
+                android:text="Designed by Computer Science in Wise U"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

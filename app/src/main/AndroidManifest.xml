@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ysu.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main2Activity" />
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".AttendActivity" />
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".MypageActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".WriteActivity" />
+        <activity android:name=".ModifyActivity" />
+
+        <service
+            android:name=".MessageService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="true"></service>
+    </application>
+
+</manifest>

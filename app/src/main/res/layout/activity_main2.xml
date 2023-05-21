@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E1E1E1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E1E1E1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mainlogo2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/attendance"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/attend"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <ImageButton
+                    android:id="@+id/mypage"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mypage"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/board"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/board"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <ImageButton
+                    android:id="@+id/setting"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/setting"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

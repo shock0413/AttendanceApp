@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color> <!-- 메인 -->
+    <color name="colorPrimaryDark">#BDBDBD</color> <!-- 상단바 #BDBDBD -->
+    <color name="colorAccent">#FFFFFF</color> <!-- 로딩등등 -->
+</resources>
+
+    <!-- colorPrimaryDark : 상태 바 색 -->
